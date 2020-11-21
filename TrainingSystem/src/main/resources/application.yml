@@ -1,0 +1,18 @@
+server:
+  port: 8089
+  tomcat:
+    max-http-form-post-size: 8090
+    uri-encoding: UTF-8
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.demo.dao
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:F:/TrainingSystem/sec/main/resources/db/database
+    username:
+    password:
+  mvc:
+    view:
+      prefix: \
+      suffix: .jsp
